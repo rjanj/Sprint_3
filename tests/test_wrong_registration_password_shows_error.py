@@ -14,5 +14,5 @@ def test_wrong_registration_password_shows_error(driver):
 
     text_error = driver.find_element(*RegistrationPageLocators.password_error)
 
-    assert text_error.is_displayed() is True
+    assert text_error.is_displayed()
 

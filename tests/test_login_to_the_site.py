@@ -12,11 +12,11 @@ def test_login_to_the_site(driver):
 
     driver.find_element(*LoginPageLocators.login_button).click()
 
-    driver.find_element(*MainLocators.personal_account_button).click()
-
     WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located(
-        (By.XPATH, "//button[text() = 'Выход']")))
+        (By.XPATH, "//button[text()='Оформить заказ']")))
 
-    assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
+    order_button = driver.find_element(*MainLocators.order_button)
+
+    assert order_button.is_displayed()
 
 

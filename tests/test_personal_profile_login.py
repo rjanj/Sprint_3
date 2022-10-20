@@ -18,4 +18,4 @@ def test_personal_profile_login(driver):
 
     order_button = driver.find_element(*MainLocators.order_button)
 
-    assert order_button.is_displayed() is True
+    assert order_button.is_displayed()

@@ -22,4 +22,4 @@ def test_login_from_registration_page(driver):
 
     order_button = driver.find_element(*MainLocators.order_button)
 
-    assert order_button.is_displayed() is True
+    assert order_button.is_displayed()

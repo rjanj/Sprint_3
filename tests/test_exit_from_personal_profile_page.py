@@ -27,4 +27,4 @@ def test_exit_from_personal_profile_page(driver):
 
     login_button = driver.find_element(*LoginPageLocators.login_button)
 
-    assert login_button.is_displayed() is True
+    assert login_button.is_displayed()
